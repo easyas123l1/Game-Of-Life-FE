@@ -121,8 +121,6 @@ export class CreateComponent implements OnInit {
     if (!jDontGoForward) {
       count += Number(this.board[j + 1][i].value);
     }
-    if (i === 2 && j === 1) {
-    }
     return count;
   }
 
