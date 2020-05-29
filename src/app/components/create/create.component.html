@@ -1,0 +1,13 @@
+<div>
+  <form #myform="ngForm" (ngSubmit)="changeDimension(myform)">
+    <label>
+      Width* (Must be a Number 10-100)
+      <input name="width" type="number" value="10" ngModel required />
+    </label>
+    <label for="height">
+      Height* (Must be a Number 10-100)
+      <input name="height" type="number" value="10" ngModel required />
+    </label>
+    <button>Update Board</button>
+  </form>
+</div>
