@@ -1,0 +1,21 @@
+.navbar {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.routes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.routes a {
+  color: #9b7955;
+  text-decoration: none;
+}
+
+.routes a:hover {
+  color: yellow;
+}
