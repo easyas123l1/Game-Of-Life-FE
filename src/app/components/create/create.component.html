@@ -1,13 +1,26 @@
 <div>
   <form #myform="ngForm" (ngSubmit)="changeDimension(myform)">
     <label>
-      Width* (Must be a Number 10-100)
+      Height* (Must be a Number 10-100)
       <input name="width" type="number" value="10" ngModel required />
     </label>
     <label for="height">
-      Height* (Must be a Number 10-100)
+      Width* (Must be a Number 10-100)
       <input name="height" type="number" value="10" ngModel required />
     </label>
     <button>Update Board</button>
   </form>
+  <div class="board">
+    <div *ngFor="let row of board; let i = index">
+      <div
+        *ngFor="let column of row; let j = index"
+        (click)="changeLife(column.position)"
+      >
+        <div *ngIf="column.bool; else elseBlock" class="alive"></div>
+        <ng-template #elseBlock>
+          <div class="dead"></div>
+        </ng-template>
+      </div>
+    </div>
+  </div>
 </div>
