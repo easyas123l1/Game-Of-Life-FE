@@ -6,15 +6,15 @@
 }
 
 .dead {
-  background: black;
-  width: 30px;
-  height: 30px;
-  border: 2px solid gray;
-}
-
-.alive {
   background: white;
   width: 30px;
   height: 30px;
-  border: 2px solid gray;
+  border: 1px solid gray;
+}
+
+.alive {
+  background: black;
+  width: 30px;
+  height: 30px;
+  border: 1px solid gray;
 }
